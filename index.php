@@ -4,7 +4,7 @@ include './functions.php';
 
 
 Header("HTTP/1.1 301 Moved Permanently"); 
-echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'];
+//echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'];
 
 if(!isset($_REQUEST['s'])) {
     Header("Location: https://www.eee.dog/");

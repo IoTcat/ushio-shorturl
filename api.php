@@ -8,7 +8,7 @@ $url = base64_decode($url);
 
 if(!isset($url)) die();
 
-$key = substr(md5($url+time()), 0, 6);
+$key = substr(md5($url.time()), 0, 6);
 db__pushData(db__connect(), "reflect", array("keyword"=>$key, "type"=>"auto", "url"=>$url, "insert_at"=>date("Y-m-d H:i:s")));
 
 

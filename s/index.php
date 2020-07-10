@@ -1,6 +1,6 @@
 <?php
 
-include './functions.php';
+include '../functions.php';
 
 
 Header("HTTP/1.1 301 Moved Permanently"); 

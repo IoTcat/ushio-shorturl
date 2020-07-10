@@ -51,7 +51,12 @@ $('#res').hide();
 	$('.next_step').click(function(){
 		getURL($('#url').val(), function(flag){
 			if(flag){
-				alert('good');
+				$.get('https://shorturl.yimian.xyz/api.php?url='+window.btoa($('#url').val()), function(res){
+					res = JSON.parse(res);
+					$('#res').show();
+					$('#res').val(res.key);
+
+				})
 			}else{
 				alert('请输入有效的链接！！')
 			}

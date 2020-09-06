@@ -2,13 +2,14 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <title>Ushio ShortenURL<!--{zh}Ushio短链生成器--><!--{en}Ushio ShortenURL--></title>
+    <title>Ushio ShortenURL</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<link rel="stylesheet" type="text/css" href="css/layer.css"/>
 	<link rel="stylesheet" type="text/css" href="css/jquery.css"/>
 	<script type="text/javascript">block_aplayer = true;lang = ['zh', 'en'];</script>
 	<script src="https://cdn.yimian.xyz/ushio-js/ushio-head.min.js"></script>
+	<script type="text/javascript">page.proj = 'iotcat/ushio-shorturl';</script>
     <script>//page.auth = ['any'];</script>
 </head>
 <body>
@@ -17,13 +18,13 @@
 		<br><br><br><br><br><br><br><br>
 		<div class="bottom_div">
 			<div class="bottom_text">
-                ..<!--{zh}请输入需要缩短的链接：--><!--{en}Please input the URL you want to shorten: -->
+                <span class=".zh">请输入需要缩短的链接：</span><span class=".en">Please input the URL you want to shorten:</span>
 			</div>
 			<div class="car_input">
-				<input type="text" name="url" id="url" placeholder-zh="输入链接" placeholder-en="Input your URL Here" />
+				<input type="text" name="url" id="url" placeholder="http://xxxx.xx/xxx/xx" />
 			</div>
 			<div class="next_step">
-                ..<!--{zh}生成--><!--{en}Generate-->
+                <span class=".zh">生成</span><span class=".en">Generate</span>
 			</div>
 			<div class="car_input">
 				<input type="text" id="res"/>
